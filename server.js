@@ -110,7 +110,7 @@ app.get('/login', isLoggedIn, function(req, res) {
 
 router.get('/', isLoggedIn, function(req, res) {
 	if (req.loggedIn){
-		res.redirect('/')
+		res.redirect('http://localhost:3000/vote');
 	}
 	else{
 		res.redirect('/login')
